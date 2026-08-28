@@ -7,7 +7,7 @@ sites:
     # The sign-in page. 200 here means Next.js is serving and the certificate is valid.
 
   - name: Backups
-    url: https://backups.testcoche.com/health
+    url: https://admin.testcoche.com/backups/health
     # Not a website check. This endpoint returns 503 the moment the newest nightly dump is
     # more than a day old, or the last backup run exited non-zero — so a backup that quietly
     # stops becomes an ordinary uptime alert. That is why there is no healthchecks.io in this
