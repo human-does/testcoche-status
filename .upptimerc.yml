@@ -1,31 +1,40 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: human-does
+repo: testcoche-status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: App
+    url: https://app.testcoche.com
+    # The sign-in page. 200 here means Next.js is serving and the certificate is valid.
+
+  - name: Backups
+    url: https://backups.testcoche.com/health
+    # Not a website check. This endpoint returns 503 the moment the newest nightly dump is
+    # more than a day old, or the last backup run exited non-zero — so a backup that quietly
+    # stops becomes an ordinary uptime alert. That is why there is no healthchecks.io in this
+    # project: the dead-man's-switch is this endpoint plus this check.
+    #
+    # It sits outside the basic auth that covers the rest of that host, and answers only
+    # BACKUPS_OK or BACKUPS_STALE — nothing worth authenticating.
+
+  - name: Deploy panel
+    url: https://dokploy.testcoche.com
+    # Dokploy answers on its login page. If this is down, deploys are down.
+
+workflowSchedule:
+  uptime: "*/5 * * * *"
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
-  navbar:
-    - title: Status
-      href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+  cname: status.testcoche.com
+  # A custom domain serves from the root, so baseUrl must be empty — setting it to "/" makes
+  # Upptime emit doubled slashes and redirect the site to /error. Learned on Mangobeds.
+  baseUrl: ""
+  theme: light
+  name: Test Coche
+  introTitle: Estado de la plataforma
+  introMessage: Estado en **tiempo real** de la plataforma de Test Coche.
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+assignees:
+  - reymon359
+
+i18n:
+  footer: "[Test Coche](https://testcoche.com)"
