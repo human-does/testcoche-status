@@ -22,18 +22,20 @@
     "url": "https://admin.testcoche.com/backups/health",
     "icon": "https://icons.duckduckgo.com/ip3/admin.testcoche.com.ico",
     "slug": "backups",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 461,
-    "timeDay": 461,
-    "timeWeek": 461,
-    "timeMonth": 461,
-    "timeYear": 461,
-    "dailyMinutesDown": {}
+    "status": "up",
+    "uptime": "79.67%",
+    "uptimeDay": "79.67%",
+    "uptimeWeek": "79.67%",
+    "uptimeMonth": "79.67%",
+    "uptimeYear": "79.67%",
+    "time": 493,
+    "timeDay": 493,
+    "timeWeek": 493,
+    "timeMonth": 493,
+    "timeYear": 493,
+    "dailyMinutesDown": {
+      "2026-08-28": 1
+    }
   },
   {
     "name": "Deploy panel",
