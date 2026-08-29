@@ -10,11 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 1340,
-    "timeDay": 1340,
-    "timeWeek": 1340,
-    "timeMonth": 1340,
-    "timeYear": 1340,
+    "time": 1298,
+    "timeDay": 1298,
+    "timeWeek": 1298,
+    "timeMonth": 1298,
+    "timeYear": 1298,
     "dailyMinutesDown": {}
   },
   {
@@ -23,19 +23,17 @@
     "icon": "https://icons.duckduckgo.com/ip3/admin.testcoche.com.ico",
     "slug": "backups",
     "status": "up",
-    "uptime": "79.67%",
-    "uptimeDay": "79.67%",
-    "uptimeWeek": "79.67%",
-    "uptimeMonth": "79.67%",
-    "uptimeYear": "79.67%",
-    "time": 493,
-    "timeDay": 493,
-    "timeWeek": 493,
-    "timeMonth": 493,
-    "timeYear": 493,
-    "dailyMinutesDown": {
-      "2026-08-28": 1
-    }
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 489,
+    "timeDay": 489,
+    "timeWeek": 489,
+    "timeMonth": 489,
+    "timeYear": 489,
+    "dailyMinutesDown": {}
   },
   {
     "name": "Deploy panel",
@@ -48,11 +46,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 728,
-    "timeDay": 728,
-    "timeWeek": 728,
-    "timeMonth": 728,
-    "timeYear": 728,
+    "time": 697,
+    "timeDay": 697,
+    "timeWeek": 697,
+    "timeMonth": 697,
+    "timeYear": 697,
     "dailyMinutesDown": {}
   }
 ]
